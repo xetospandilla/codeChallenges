@@ -7,6 +7,14 @@ function contarVocales( texto ){
     for( let letra of texto ){
         if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
             vocales += 1
+        } else if (letra === "A" || letra === "E" || letra === "I" || letra === "O" || letra === "U"){
+            // This condition is unnecessary and incorrect for the problem statement.
+            // The function should only count lowercase vowels, not uppercase letters as correct vowels.
+            // Adding this else if clause would cause the function to miss counting uppercase vowels correctly.
+            // Thus, removing it to ensure that only lowercase aeiou are counted as valid vowels. //
+            // Also, this condition is incorrect because the problem statement likely expects only lowercase aeiou to be considered valid vowels.!
+        } else {
+            continue;
         }
     }
 
