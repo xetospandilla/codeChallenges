@@ -1,0 +1,15 @@
+# Dependencias
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# Sistema
+Thumbs.db
+.DS_Store
+
+# Datos locales
+*.db
+*.sqlite
+*.sqlite3
